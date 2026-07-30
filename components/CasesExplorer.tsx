@@ -7,6 +7,7 @@ import { formatBDT, formatUSD, formatMultiplier } from "@/lib/format";
 import CaseCard from "@/components/CaseCard";
 import VerificationBadge from "@/components/VerificationBadge";
 import { useLanguage } from "@/components/LanguageProvider";
+import Reveal from "@/components/Reveal";
 
 type SortKey = "costDesc" | "costAsc" | "dateDesc" | "dateAsc" | "multiplierDesc";
 
@@ -193,8 +194,10 @@ export default function CasesExplorer({
 
       {view === "cards" ? (
         <div className="grid sm:grid-cols-2 gap-5">
-          {filtered.map((c) => (
-            <CaseCard key={c.id} record={c} />
+          {filtered.map((c, i) => (
+            <Reveal key={c.id} delay={(i % 4) * 80}>
+              <CaseCard record={c} />
+            </Reveal>
           ))}
           {filtered.length === 0 && (
             <p className="text-sm text-muted col-span-full py-10 text-center">{tr(t.noResults)}</p>

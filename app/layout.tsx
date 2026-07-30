@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const notoSerifBengali = Noto_Serif_Bengali({
   variable: "--font-bn-serif",
@@ -32,7 +33,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "এমপি চিকিৎসা নজরদারি — MP Treatment Watch",
   description:
-    "Tracking Bangladeshi politicians and MP/central party leaders who took medical treatment abroad after 5 August 2024, comparing what they spent abroad against equivalent treatment costs in Bangladesh.",
+    "A project by Activate Rights tracking Bangladeshi politicians and MP/central party leaders who took medical treatment abroad after 5 August 2024, comparing what they spent abroad against equivalent treatment costs in Bangladesh.",
+  authors: [{ name: "Activate Rights" }],
+  creator: "Activate Rights",
+  publisher: "Activate Rights",
 };
 
 export default function RootLayout({
@@ -48,6 +52,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <LanguageProvider>
+          <ScrollProgress />
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />

@@ -1,4 +1,5 @@
 import { Bi } from "@/components/LanguageProvider";
+import Reveal from "@/components/Reveal";
 
 export const metadata = { title: "পদ্ধতি · Methodology — MP Treatment Watch" };
 
@@ -12,7 +13,7 @@ export default function MethodologyPage() {
         className="block font-headline text-3xl sm:text-4xl font-semibold mb-8"
       />
 
-      <section className="mb-10">
+      <Reveal as="section" className="mb-10">
         <Bi bn="তথ্য সংগ্রহ" en="Data collection" className="block font-headline text-xl font-semibold mb-3" />
         <Bi
           bn="প্রতিটি মামলা একটি প্রকাশিত প্রতিবেদন থেকে শুরু হয় — সংবাদ কভারেজ, সংসদীয় প্রকাশনা, হাসপাতালের বিবৃতি, বা আদালত/প্রোবেট ফাইলিং। আমরা গুজব বা অযাচাইকৃত সোশ্যাল মিডিয়া দাবির ভিত্তিতে কোনো মামলা যুক্ত করি না। প্রতিটি সূত্র তার প্রকাশনা, তারিখ এবং সরাসরি লিংকসহ লগ করা হয়।"
@@ -24,9 +25,9 @@ export default function MethodologyPage() {
           en="Where multiple outlets report conflicting figures, we present the most conservative (lowest) credible estimate and note the discrepancy in the case's notes field."
           className="block text-sm text-muted leading-relaxed"
         />
-      </section>
+      </Reveal>
 
-      <section className="mb-10">
+      <Reveal as="section" className="mb-10">
         <Bi bn="খরচ নির্ণয়ের পদ্ধতি" en="Cost estimation approach" className="block font-headline text-xl font-semibold mb-3" />
         <Bi
           bn="বিদেশের খরচ প্রতিবেদিত অঙ্ক, উপলব্ধ হাসপাতালের ফি তালিকা, বা প্রামাণ্য পরিবার/সহযোগীর বিবৃতি থেকে নেওয়া হয়। বাংলাদেশ-সমতুল্য খরচ অনুমান করা হয় একই বা ক্লিনিক্যালি সমতুল্য পদ্ধতি সম্পাদনকারী তুলনীয় সরকারি ও বেসরকারি হাসপাতালের প্রকাশিত রেট কার্ড ব্যবহার করে।"
@@ -38,9 +39,9 @@ export default function MethodologyPage() {
           en="The multiplier (abroad ÷ local) and potential savings figures are illustrative comparisons, not precise financial audits — actual costs vary by complication rate, ward class, and negotiated hospital rates."
           className="block text-sm text-muted leading-relaxed"
         />
-      </section>
+      </Reveal>
 
-      <section className="mb-10">
+      <Reveal as="section" className="mb-10">
         <Bi bn="যাচাই স্তর" en="Verification tiers" className="block font-headline text-xl font-semibold mb-3" />
         <ul className="space-y-3 text-sm text-muted">
           <li>
@@ -65,9 +66,9 @@ export default function MethodologyPage() {
             />
           </li>
         </ul>
-      </section>
+      </Reveal>
 
-      <section id="corrections" className="mb-6">
+      <Reveal as="section" id="corrections" className="mb-6">
         <Bi bn="সংশোধন নীতি" en="Correction policy" className="block font-headline text-xl font-semibold mb-3" />
         <Bi
           bn="যদি আপনি কোনো ভুল খুঁজে পান, অতিরিক্ত সূত্র রাখেন, বা কোনো মামলার বিষয়বস্তুর প্রতিনিধিত্ব করেন এবং সংশোধন বা বিবৃতি জমা দিতে চান, সহায়ক প্রমাণসহ সম্পাদকীয় দলের সাথে যোগাযোগ করুন। সংশোধনগুলো মূল সূত্রের বিরুদ্ধে পর্যালোচনা করা হয় এবং মামলার &ldquo;সর্বশেষ আপডেট&rdquo; তারিখে দৃশ্যমান আপডেট প্রতিফলিত হয়।"
@@ -81,7 +82,7 @@ export default function MethodologyPage() {
           </a>{" "}
           <Bi bn="সাধারণত আমরা ২ কর্মদিবসের মধ্যে সাড়া দেওয়ার চেষ্টা করি।" en="We aim to respond within 2 business days." />
         </p>
-      </section>
+      </Reveal>
     </div>
   );
 }

@@ -12,8 +12,8 @@ export default function SiteFooter() {
             className="block font-headline text-base text-foreground mb-2"
           />
           <Bi
-            bn="এমপি ট্রিটমেন্ট ওয়াচ জনস্বাস্থ্য সেবার বৈষম্য নিয়ে একটি জনস্বার্থমূলক তথ্য প্রকল্প।"
-            en="MP Treatment Watch is a public-accountability data project on healthcare access inequality in Bangladesh."
+            bn="এমপি ট্রিটমেন্ট ওয়াচ জনস্বাস্থ্য সেবার বৈষম্য নিয়ে একটি জনস্বার্থমূলক তথ্য প্রকল্প, অ্যাক্টিভেট রাইটস দ্বারা পরিচালিত।"
+            en="MP Treatment Watch is a public-accountability data project on healthcare access inequality in Bangladesh, run by Activate Rights."
           />
         </div>
         <div>
@@ -37,8 +37,8 @@ export default function SiteFooter() {
       <div className="border-t rule">
         <div className="max-w-6xl mx-auto px-4 py-4 text-xs text-faint flex flex-wrap justify-between gap-2">
           <Bi
-            bn={`© ${new Date().getFullYear()} এমপি চিকিৎসা নজরদারি`}
-            en={`© ${new Date().getFullYear()} MP Treatment Watch`}
+            bn={`© ${new Date().getFullYear()} অ্যাক্টিভেট রাইটস — এমপি চিকিৎসা নজরদারি`}
+            en={`© ${new Date().getFullYear()} Activate Rights — MP Treatment Watch`}
           />
           <Bi
             bn="প্রতিটি এন্ট্রির সর্বশেষ আপডেটের তারিখ অনুযায়ী তথ্য হালনাগাদ।"

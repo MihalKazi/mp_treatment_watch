@@ -5,6 +5,7 @@ import Counter from "@/components/Counter";
 import CountryChart from "@/components/CountryChart";
 import FundContextModule from "@/components/FundContextModule";
 import { Bi } from "@/components/LanguageProvider";
+import Reveal from "@/components/Reveal";
 
 export default function Home() {
   const cases = getAllCases();
@@ -67,32 +68,34 @@ export default function Home() {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 pb-16">
-        <div className="flex items-baseline justify-between mb-6">
+        <Reveal className="flex items-baseline justify-between mb-6">
           <Bi bn="নির্বাচিত মামলা" en="Featured cases" className="font-headline text-2xl sm:text-3xl font-semibold" />
           <Link href="/cases" className="text-sm text-accent hover:underline">
             <Bi bn="সব দেখুন →" en="View all →" />
           </Link>
-        </div>
+        </Reveal>
         <div className="grid sm:grid-cols-2 gap-5">
-          {featured.map((c) => (
-            <CaseCard key={c.id} record={c} />
+          {featured.map((c, i) => (
+            <Reveal key={c.id} delay={i * 80}>
+              <CaseCard record={c} />
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 pb-16">
+      <Reveal as="section" className="max-w-6xl mx-auto px-4 pb-16">
         <Bi bn="গন্তব্য দেশ অনুযায়ী খরচ" en="Spending by destination country" className="block font-headline text-2xl sm:text-3xl font-semibold mb-6" />
         <div className="border rule rounded-lg bg-surface p-4 sm:p-6">
           <CountryChart data={agg.spendingByCountry} />
         </div>
-      </section>
+      </Reveal>
 
-      <section className="max-w-6xl mx-auto px-4 pb-20">
+      <Reveal as="section" className="max-w-6xl mx-auto px-4 pb-20">
         <FundContextModule totalBDT={agg.totalPotentialSavingsBDT} />
-      </section>
+      </Reveal>
 
       <section className="border-t rule">
-        <div className="max-w-6xl mx-auto px-4 py-14">
+        <Reveal className="max-w-6xl mx-auto px-4 py-14">
           <Bi bn="আমরা যেভাবে যাচাই করি" en="How we verify" className="block text-xs uppercase tracking-[0.2em] text-accent mb-3" />
           <Bi
             bn="প্রতিটি অঙ্ক যাচাই স্তর অনুযায়ী শ্রেণীবদ্ধ এবং একটি প্রকাশিত সূত্রে সন্ধানযোগ্য।"
@@ -107,7 +110,7 @@ export default function Home() {
           <Link href="/methodology" className="text-sm text-accent hover:underline">
             <Bi bn="পদ্ধতি পড়ুন →" en="Read the methodology →" />
           </Link>
-        </div>
+        </Reveal>
       </section>
     </div>
   );

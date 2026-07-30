@@ -1,4 +1,5 @@
 import { Bi } from "@/components/LanguageProvider";
+import Reveal from "@/components/Reveal";
 
 export const metadata = { title: "আমাদের সম্পর্কে · About — MP Treatment Watch" };
 
@@ -12,10 +13,15 @@ export default function AboutPage() {
         className="block font-headline text-3xl sm:text-4xl font-semibold mb-8"
       />
 
-      <div className="space-y-6 text-sm text-muted leading-relaxed">
+      <Reveal className="space-y-6 text-sm text-muted leading-relaxed">
         <Bi
-          bn="এমপি চিকিৎসা নজরদারি একটি জনস্বার্থমূলক তথ্য সাংবাদিকতা প্রকল্প। এটি একটি ক্রমাগত ধারা দৃশ্যমান করার জন্য বিদ্যমান: বাংলাদেশের নির্বাচিত কর্মকর্তা এবং কেন্দ্রীয় দলীয় নেতারা প্রায়ই বিদেশে চিকিৎসার জন্য যান যা, অনেক নথিভুক্ত ক্ষেত্রে, দেশেই উপলব্ধ — যখন তাদের তদারকিতে থাকা স্বাস্থ্য ব্যবস্থা সাধারণ নাগরিকদের জন্য অপ্রতুল থেকে যায়।"
-          en="MP Treatment Watch is a public-interest data journalism project. It exists to make visible a persistent pattern: elected officials and central party leaders in Bangladesh frequently travel abroad for medical treatment that is, in many documented cases, available domestically — while the health system they oversee remains under-resourced for ordinary citizens."
+          bn="এমপি চিকিৎসা নজরদারি অ্যাক্টিভেট রাইটস দ্বারা পরিচালিত একটি জনস্বার্থমূলক তথ্য সাংবাদিকতা প্রকল্প।"
+          en="MP Treatment Watch is a public-interest data journalism project run by Activate Rights."
+          className="block font-medium text-foreground"
+        />
+        <Bi
+          bn="এটি একটি ক্রমাগত ধারা দৃশ্যমান করার জন্য বিদ্যমান: বাংলাদেশের নির্বাচিত কর্মকর্তা এবং কেন্দ্রীয় দলীয় নেতারা প্রায়ই বিদেশে চিকিৎসার জন্য যান যা, অনেক নথিভুক্ত ক্ষেত্রে, দেশেই উপলব্ধ — যখন তাদের তদারকিতে থাকা স্বাস্থ্য ব্যবস্থা সাধারণ নাগরিকদের জন্য অপ্রতুল থেকে যায়।"
+          en="It exists to make visible a persistent pattern: elected officials and central party leaders in Bangladesh frequently travel abroad for medical treatment that is, in many documented cases, available domestically — while the health system they oversee remains under-resourced for ordinary citizens."
           className="block"
         />
         <Bi
@@ -41,7 +47,7 @@ export default function AboutPage() {
           en="Names and cases in this build are illustrative and do not represent real individuals."
           className="block text-faint text-xs border-t rule pt-6"
         />
-      </div>
+      </Reveal>
     </div>
   );
 }

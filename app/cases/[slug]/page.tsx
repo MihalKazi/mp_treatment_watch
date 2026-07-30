@@ -5,6 +5,7 @@ import { formatBDT, formatUSD, formatMultiplier } from "@/lib/format";
 import VerificationBadge from "@/components/VerificationBadge";
 import CostBar from "@/components/CostBar";
 import { Bi } from "@/components/LanguageProvider";
+import Reveal from "@/components/Reveal";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -44,7 +45,7 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
         </div>
       </header>
 
-      <section className="mb-12">
+      <Reveal as="section" className="mb-12">
         <Bi
           bn="চিকিৎসা সময়রেখা"
           en="Treatment timeline"
@@ -73,9 +74,9 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
             </p>
           </li>
         </ol>
-      </section>
+      </Reveal>
 
-      <section className="mb-12 border rule rounded-lg bg-surface p-6 sm:p-8">
+      <Reveal as="section" className="mb-12 border rule rounded-lg bg-surface p-6 sm:p-8">
         <Bi
           bn="খরচ তুলনা"
           en="Cost comparison"
@@ -134,9 +135,9 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
           localBDT={record.inBangladesh.estimatedCostBDT}
           multiplier={record.comparison.multiplier}
         />
-      </section>
+      </Reveal>
 
-      <section>
+      <Reveal as="section">
         <Bi bn="সূত্র" en="Sources" className="block text-xs uppercase tracking-[0.2em] text-accent mb-3" />
         <ul className="space-y-3">
           {record.sources.map((s) => (
@@ -153,7 +154,7 @@ export default async function CaseDetailPage({ params }: { params: Promise<{ slu
         <p className="text-xs text-faint mt-4">
           <Bi bn="সর্বশেষ আপডেট" en="Last updated" />: {record.lastUpdated}
         </p>
-      </section>
+      </Reveal>
     </div>
   );
 }
