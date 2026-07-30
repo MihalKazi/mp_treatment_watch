@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MP Treatment Watch (এমপি চিকিৎসা নজরদারি)
 
-## Getting Started
+Data-journalism prototype tracking Bangladeshi politicians and MP/central party leaders who took
+medical treatment abroad after 5 August 2024, comparing what they spent abroad against the cost of
+equivalent treatment in Bangladesh.
 
-First, run the development server:
+**All data currently shipped in this repo is illustrative** — names, parties, hospitals, and figures
+under `data/cases.json` are invented and do not represent real individuals. Swap them for real,
+sourced cases before treating this as a live publication (see "Adding a real, sourced case" below).
+
+## Stack
+
+- Next.js 14+ (App Router), TypeScript, Tailwind CSS v4
+- Recharts for the country-spending chart
+- Data loaded statically from `data/cases.json` — no backend
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Data schema
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Each entry in `data/cases.json` is a `CaseRecord` (see `lib/types.ts`):
 
-## Learn More
+```ts
+{
+  id: string;
+  slug: string;
+  person: { nameBn, nameEn, party, position, photoPlaceholder };
+  treatment: { conditionBn, conditionEn, procedure, dateStarted };
+  abroad: { country, city, hospital, durationDays, costUSD, costBDT };
+  inBangladesh: { available, exampleHospitals[], estimatedCostBDT, notes };
+  comparison: { multiplier, savingsIfLocalBDT }; // multiplier = abroad ÷ local cost
+  sources: [{ title, outlet, url, date }];
+  verificationStatus: "verified" | "reported" | "unverified";
+  lastUpdated: string; // ISO date
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+`lib/data.ts` exposes helpers (`getAllCases`, `getCaseBySlug`, `getAggregates`, `getFundContext`) used
+across pages. `lib/format.ts` formats currency (BDT lakh/crore notation, USD) and multipliers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adding a real, sourced case
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Confirm at least one published, citable source (news report, official disclosure, hospital
+   statement). Multiple independent sources are required for `"verified"` status — see
+   `/methodology` for the full tier definitions.
+2. Add a new object to `data/cases.json` following the schema above. Use a unique `slug`
+   (kebab-case) — case detail pages are statically generated from it.
+3. Set `abroad.costBDT` and `inBangladesh.estimatedCostBDT` from sourced figures, then compute:
+   - `comparison.multiplier = abroad.costBDT / inBangladesh.estimatedCostBDT`
+   - `comparison.savingsIfLocalBDT = abroad.costBDT - inBangladesh.estimatedCostBDT`
+4. List every source used in `sources[]` with outlet, title, URL, and publish date — every cost
+   figure displayed on the site must be traceable to a source here.
+5. Set `verificationStatus` honestly per the methodology tiers, and update `lastUpdated`.
 
-## Deploy on Vercel
+## Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/` — hero, animated aggregate counters, featured cases, country-spending chart, fund-context module
+- `/cases` — full list with card/table toggle, filters (party, country, availability, verification), search, sort
+- `/cases/[slug]` — case detail: timeline, side-by-side cost comparison, sources
+- `/methodology` — data collection, cost estimation, verification tiers, correction policy
+- `/about` — project purpose and scope

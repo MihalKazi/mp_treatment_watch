@@ -1,0 +1,338 @@
+[
+  {
+    "id": "case-001",
+    "slug": "kamruzzaman-talukder",
+    "person": {
+      "nameBn": "কামরুজ্জামান তালুকদার",
+      "nameEn": "Kamruzzaman Talukder",
+      "party": "United People's Alliance",
+      "position": "Former MP, Dhaka-10",
+      "photoPlaceholder": "/placeholders/person-1.svg"
+    },
+    "treatment": {
+      "conditionBn": "হৃদরোগ (বাইপাস সার্জারি)",
+      "conditionEn": "Cardiac condition (bypass surgery)",
+      "procedure": "Coronary Artery Bypass Graft (CABG)",
+      "dateStarted": "2024-09-14"
+    },
+    "abroad": {
+      "country": "Singapore",
+      "city": "Singapore",
+      "hospital": "Horizon Cardiac Centre, Singapore",
+      "durationDays": 12,
+      "costUSD": 45000,
+      "costBDT": 5400000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["National Institute of Cardiovascular Diseases", "Ibrahim Cardiac Hospital"],
+      "estimatedCostBDT": 750000,
+      "notes": "CABG is routinely performed in Bangladesh at specialized cardiac centers with comparable success rates."
+    },
+    "comparison": { "multiplier": 7.2, "savingsIfLocalBDT": 4650000 },
+    "sources": [
+      { "title": "Former MP flies to Singapore for heart surgery", "outlet": "Desh Barta", "url": "https://example.com/reports/talukder-singapore-heart-surgery", "date": "2024-09-10" },
+      { "title": "Treatment cost details emerge in follow-up report", "outlet": "Bangla Chronicle", "url": "https://example.com/reports/talukder-cost-followup", "date": "2024-10-02" }
+    ],
+    "verificationStatus": "reported",
+    "lastUpdated": "2025-01-15"
+  },
+  {
+    "id": "case-002",
+    "slug": "rehana-sultana-meem",
+    "person": {
+      "nameBn": "রেহানা সুলতানা মিম",
+      "nameEn": "Rehana Sultana Meem",
+      "party": "National Unity Party",
+      "position": "Central Committee Member",
+      "photoPlaceholder": "/placeholders/person-2.svg"
+    },
+    "treatment": {
+      "conditionBn": "কিডনি প্রতিস্থাপন",
+      "conditionEn": "Kidney transplant",
+      "procedure": "Renal Transplantation",
+      "dateStarted": "2024-11-02"
+    },
+    "abroad": {
+      "country": "India",
+      "city": "Chennai",
+      "hospital": "Meridian Multi-Organ Institute, Chennai",
+      "durationDays": 21,
+      "costUSD": 28000,
+      "costBDT": 3360000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["BSMMU Kidney Transplant Unit", "Kidney Foundation Hospital"],
+      "estimatedCostBDT": 600000,
+      "notes": "Kidney transplant capacity exists in Bangladesh though donor-matching wait times can be longer."
+    },
+    "comparison": { "multiplier": 5.6, "savingsIfLocalBDT": 2760000 },
+    "sources": [
+      { "title": "Party leader undergoes transplant in Chennai", "outlet": "Sokal Sangbad", "url": "https://example.com/reports/meem-chennai-transplant", "date": "2024-10-29" }
+    ],
+    "verificationStatus": "verified",
+    "lastUpdated": "2025-02-03"
+  },
+  {
+    "id": "case-003",
+    "slug": "aminul-haque-bhuiyan",
+    "person": {
+      "nameBn": "আমিনুল হক ভূঁইয়া",
+      "nameEn": "Aminul Haque Bhuiyan",
+      "party": "United People's Alliance",
+      "position": "Former State Minister",
+      "photoPlaceholder": "/placeholders/person-3.svg"
+    },
+    "treatment": {
+      "conditionBn": "মেরুদণ্ডের অস্ত্রোপচার",
+      "conditionEn": "Spinal surgery",
+      "procedure": "Lumbar Spinal Fusion",
+      "dateStarted": "2024-08-20"
+    },
+    "abroad": {
+      "country": "Thailand",
+      "city": "Bangkok",
+      "hospital": "Siam Wellness International Hospital, Bangkok",
+      "durationDays": 9,
+      "costUSD": 22000,
+      "costBDT": 2640000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["National Institute of Neurosciences", "CMH Dhaka"],
+      "estimatedCostBDT": 450000,
+      "notes": "Spinal fusion surgeries are performed locally by trained neurosurgeons."
+    },
+    "comparison": { "multiplier": 5.9, "savingsIfLocalBDT": 2190000 },
+    "sources": [
+      { "title": "Ex-minister seeks spinal treatment abroad amid unrest", "outlet": "Desh Barta", "url": "https://example.com/reports/bhuiyan-bangkok-spine", "date": "2024-08-18" }
+    ],
+    "verificationStatus": "reported",
+    "lastUpdated": "2025-01-20"
+  },
+  {
+    "id": "case-004",
+    "slug": "farida-yasmin-chowdhury",
+    "person": {
+      "nameBn": "ফরিদা ইয়াসমিন চৌধুরী",
+      "nameEn": "Farida Yasmin Chowdhury",
+      "party": "Bangladesh Progressive Front",
+      "position": "Former MP, Chittagong-4",
+      "photoPlaceholder": "/placeholders/person-4.svg"
+    },
+    "treatment": {
+      "conditionBn": "ক্যান্সার চিকিৎসা",
+      "conditionEn": "Cancer treatment (chemotherapy course)",
+      "procedure": "Chemotherapy + targeted therapy",
+      "dateStarted": "2024-10-05"
+    },
+    "abroad": {
+      "country": "United Kingdom",
+      "city": "London",
+      "hospital": "Thames Oncology Centre, London",
+      "durationDays": 45,
+      "costUSD": 95000,
+      "costBDT": 11400000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["National Institute of Cancer Research", "Ahsania Mission Cancer Hospital"],
+      "estimatedCostBDT": 1800000,
+      "notes": "Chemotherapy protocols are available locally; targeted-therapy drug access has improved since 2022."
+    },
+    "comparison": { "multiplier": 6.3, "savingsIfLocalBDT": 9600000 },
+    "sources": [
+      { "title": "Family confirms London cancer treatment", "outlet": "Bangla Chronicle", "url": "https://example.com/reports/chowdhury-london-oncology", "date": "2024-10-01" },
+      { "title": "Follow-up: treatment costs disclosed in probate filing", "outlet": "Jatiya Barta", "url": "https://example.com/reports/chowdhury-probate-costs", "date": "2025-01-11" }
+    ],
+    "verificationStatus": "verified",
+    "lastUpdated": "2025-02-14"
+  },
+  {
+    "id": "case-005",
+    "slug": "shahidul-islam-mridha",
+    "person": {
+      "nameBn": "শহীদুল ইসলাম মৃধা",
+      "nameEn": "Shahidul Islam Mridha",
+      "party": "National Unity Party",
+      "position": "Former MP, Rajshahi-6",
+      "photoPlaceholder": "/placeholders/person-5.svg"
+    },
+    "treatment": {
+      "conditionBn": "লিভার প্রতিস্থাপন",
+      "conditionEn": "Liver transplant",
+      "procedure": "Living Donor Liver Transplantation",
+      "dateStarted": "2024-12-01"
+    },
+    "abroad": {
+      "country": "India",
+      "city": "New Delhi",
+      "hospital": "Capital Liver & Biliary Institute, Delhi",
+      "durationDays": 30,
+      "costUSD": 60000,
+      "costBDT": 7200000
+    },
+    "inBangladesh": {
+      "available": false,
+      "exampleHospitals": [],
+      "estimatedCostBDT": 2500000,
+      "notes": "Liver transplant programs in Bangladesh remain extremely limited; most patients are referred abroad."
+    },
+    "comparison": { "multiplier": 2.9, "savingsIfLocalBDT": 4700000 },
+    "sources": [
+      { "title": "Leader undergoes liver transplant in Delhi", "outlet": "Sokal Sangbad", "url": "https://example.com/reports/mridha-delhi-liver", "date": "2024-11-27" }
+    ],
+    "verificationStatus": "reported",
+    "lastUpdated": "2025-01-30"
+  },
+  {
+    "id": "case-006",
+    "slug": "nurul-amin-sarkar",
+    "person": {
+      "nameBn": "নুরুল আমিন সরকার",
+      "nameEn": "Nurul Amin Sarkar",
+      "party": "United People's Alliance",
+      "position": "Former Whip, Jatiya Sangsad",
+      "photoPlaceholder": "/placeholders/person-6.svg"
+    },
+    "treatment": {
+      "conditionBn": "হাঁটু প্রতিস্থাপন",
+      "conditionEn": "Knee replacement (bilateral)",
+      "procedure": "Bilateral Total Knee Arthroplasty",
+      "dateStarted": "2024-09-28"
+    },
+    "abroad": {
+      "country": "Thailand",
+      "city": "Bangkok",
+      "hospital": "Siam Orthopedic Hospital, Bangkok",
+      "durationDays": 14,
+      "costUSD": 26000,
+      "costBDT": 3120000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["National Institute of Traumatology & Orthopaedic Rehabilitation", "Square Hospital"],
+      "estimatedCostBDT": 550000,
+      "notes": "Bilateral knee replacement is a standard procedure available at multiple private hospitals."
+    },
+    "comparison": { "multiplier": 5.7, "savingsIfLocalBDT": 2570000 },
+    "sources": [
+      { "title": "Former whip travels for knee surgery", "outlet": "Desh Barta", "url": "https://example.com/reports/sarkar-bangkok-knee", "date": "2024-09-25" }
+    ],
+    "verificationStatus": "unverified",
+    "lastUpdated": "2025-01-05"
+  },
+  {
+    "id": "case-007",
+    "slug": "delwar-hossain-khandaker",
+    "person": {
+      "nameBn": "দেলওয়ার হোসেন খন্দকার",
+      "nameEn": "Delwar Hossain Khandaker",
+      "party": "Bangladesh Progressive Front",
+      "position": "Former MP, Sylhet-2",
+      "photoPlaceholder": "/placeholders/person-7.svg"
+    },
+    "treatment": {
+      "conditionBn": "নিউরোলজিক্যাল পরীক্ষা ও চিকিৎসা",
+      "conditionEn": "Neurological evaluation and treatment (stroke recovery)",
+      "procedure": "Post-stroke neuro-rehabilitation",
+      "dateStarted": "2024-08-30"
+    },
+    "abroad": {
+      "country": "United States",
+      "city": "Houston",
+      "hospital": "Lonestar Neuroscience Institute, Houston",
+      "durationDays": 60,
+      "costUSD": 140000,
+      "costBDT": 16800000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["National Institute of Neurosciences", "United Hospital Rehabilitation Unit"],
+      "estimatedCostBDT": 2200000,
+      "notes": "Stroke rehabilitation programs exist locally though intensity and duration of care vary."
+    },
+    "comparison": { "multiplier": 7.6, "savingsIfLocalBDT": 14600000 },
+    "sources": [
+      { "title": "Former MP flown to US for stroke treatment", "outlet": "Bangla Chronicle", "url": "https://example.com/reports/khandaker-houston-stroke", "date": "2024-08-27" },
+      { "title": "Medical bills reportedly exceed $100,000", "outlet": "Jatiya Barta", "url": "https://example.com/reports/khandaker-bills", "date": "2024-11-15" }
+    ],
+    "verificationStatus": "reported",
+    "lastUpdated": "2025-02-01"
+  },
+  {
+    "id": "case-008",
+    "slug": "tahmina-akhter-rima",
+    "person": {
+      "nameBn": "তাহমিনা আখতার রিমা",
+      "nameEn": "Tahmina Akhter Rima",
+      "party": "National Unity Party",
+      "position": "Central Committee Member",
+      "photoPlaceholder": "/placeholders/person-8.svg"
+    },
+    "treatment": {
+      "conditionBn": "ছানি ও রেটিনা অস্ত্রোপচার",
+      "conditionEn": "Cataract and retinal surgery",
+      "procedure": "Phacoemulsification with retinal repair",
+      "dateStarted": "2024-10-18"
+    },
+    "abroad": {
+      "country": "Singapore",
+      "city": "Singapore",
+      "hospital": "Horizon Eye Institute, Singapore",
+      "durationDays": 6,
+      "costUSD": 15000,
+      "costBDT": 1800000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["Bangladesh Eye Hospital", "Ispahani Islamia Eye Institute"],
+      "estimatedCostBDT": 180000,
+      "notes": "Both procedures are widely and reliably available at specialized eye hospitals in Bangladesh."
+    },
+    "comparison": { "multiplier": 10.0, "savingsIfLocalBDT": 1620000 },
+    "sources": [
+      { "title": "Eye surgery trip to Singapore draws scrutiny", "outlet": "Sokal Sangbad", "url": "https://example.com/reports/rima-singapore-eye", "date": "2024-10-15" }
+    ],
+    "verificationStatus": "verified",
+    "lastUpdated": "2025-01-22"
+  },
+  {
+    "id": "case-009",
+    "slug": "mostafa-kamal-patwary",
+    "person": {
+      "nameBn": "মোস্তফা কামাল পাটোয়ারী",
+      "nameEn": "Mostafa Kamal Patwary",
+      "party": "United People's Alliance",
+      "position": "Former MP, Khulna-3",
+      "photoPlaceholder": "/placeholders/person-9.svg"
+    },
+    "treatment": {
+      "conditionBn": "ডায়াবেটিস জটিলতা ও ডায়ালাইসিস",
+      "conditionEn": "Diabetes complications requiring dialysis",
+      "procedure": "Renal dialysis program + vascular repair",
+      "dateStarted": "2024-09-05"
+    },
+    "abroad": {
+      "country": "India",
+      "city": "Kolkata",
+      "hospital": "Ganges Renal Care Hospital, Kolkata",
+      "durationDays": 25,
+      "costUSD": 20000,
+      "costBDT": 2400000
+    },
+    "inBangladesh": {
+      "available": true,
+      "exampleHospitals": ["Kidney Foundation Hospital", "Bangabandhu Sheikh Mujib Medical University"],
+      "estimatedCostBDT": 400000,
+      "notes": "Dialysis and vascular access procedures are widely available at both public and private facilities."
+    },
+    "comparison": { "multiplier": 6.0, "savingsIfLocalBDT": 2000000 },
+    "sources": [
+      { "title": "Former MP undergoes renal treatment in Kolkata", "outlet": "Desh Barta", "url": "https://example.com/reports/patwary-kolkata-renal", "date": "2024-09-01" }
+    ],
+    "verificationStatus": "unverified",
+    "lastUpdated": "2025-01-08"
+  }
+]
