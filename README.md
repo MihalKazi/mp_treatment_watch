@@ -68,3 +68,4 @@ across pages. `lib/format.ts` formats currency (BDT lakh/crore notation, USD) an
 - `/about` — project purpose and scope
 
 **Live site:** https://mp-treatment-watch.vercel.app
+
