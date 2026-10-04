@@ -66,3 +66,5 @@ across pages. `lib/format.ts` formats currency (BDT lakh/crore notation, USD) an
 - `/cases/[slug]` — case detail: timeline, side-by-side cost comparison, sources
 - `/methodology` — data collection, cost estimation, verification tiers, correction policy
 - `/about` — project purpose and scope
+
+**Live site:** https://mp-treatment-watch.vercel.app
